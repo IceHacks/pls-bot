@@ -33,3 +33,15 @@ before_cache:
 branches:
     except:
         - "/^v\\d+\\.\\d+\\.\\d+$/"
+
+before_deploy:
+    - cd build
+    - zip file.zip
+
+deploy:
+    provider: releases
+    api_key: "08b00726f8f500fb5d4c389f97af0942d3b800ee"
+    file: "file.zip"
+    skip_cleanup: true
+    on:
+        tags: true
