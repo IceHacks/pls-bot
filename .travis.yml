@@ -40,6 +40,6 @@ before_deploy:
 
 deploy:
     provider: releases
-    api_key: "59108889b05977c2f154a353ddd3b25cf73c18f9"
+    api_key: $TOKEN
     file: "file.zip"
     skip_cleanup: true
