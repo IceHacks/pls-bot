@@ -1,7 +1,6 @@
 const builder = require("electron-builder");
 const Platform = builder.Platform;
 const token = process.env.TOKEN;
-const gh = require("gh-release");
 
 console.log(token);
 
