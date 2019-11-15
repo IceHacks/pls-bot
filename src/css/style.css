@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+	padding: 10px;
+}
+
+input {
+	border: none;
+	background-color: #0000001a;
+	padding: 10px;
+	outline: none;
+	width: -webkit-fill-available;
+	border-radius: 2px;
+	margin: 0 0 10px;
+	display: block;
+}
+
+input[type="button"] {
+	background-color: #47ca73;
+	cursor: pointer;
+}
+
+input#stop {
+	background-color: #f9536f;
+	color: white;
+}
+
+input[type="button"]:disabled {
+	background-color: #e2e2e2 !important;
+	cursor: default;
+	color: #9a9a9a !important;
+}
+
+label {
+	margin: 0 0 5px;
+	display: block;
+}
+
+span {
+	/*border-bottom: 1px dashed #888888;*/
+	color: #888888;
+	display: inline-block;
+	position: fixed;
+	right: 10px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
