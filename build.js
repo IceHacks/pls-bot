@@ -23,6 +23,7 @@ builder
 		gh(
 			{
 				tag_name: "v1.0.0",
+				target_commitish: "master",
 				name: "Travis Automated Build",
 				body: "Built",
 				owner: "IceHacks",
