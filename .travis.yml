@@ -33,9 +33,3 @@ before_cache:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
-
-deploy:
-  provider: releases
-  api_key: ${TOKEN}
-  file: "dist/PlsBot-1.0.0-mac.dmg"
-  skip_cleanup: true

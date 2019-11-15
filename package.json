@@ -13,17 +13,12 @@
 	"license": "ISC",
 	"devDependencies": {
 		"electron": "^7.1.1",
-		"electron-builder": "^22.1.0"
+		"electron-builder": "^22.1.0",
+		"gh-release": "^3.5.0"
 	},
 	"dependencies": {
 		"discord.js": "^11.5.1",
 		"jquery": "^3.4.1",
 		"lodash": "^4.17.15"
-	},
-	"build": {
-		"appId": "com.pls.bot",
-		"productName": "PlsBot",
-		"copyright": "© 2019-20 IceHacks",
-		"directories": {}
 	}
 }
