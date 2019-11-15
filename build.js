@@ -24,9 +24,10 @@ builder
 			{
 				tag_name: "v1.0.0",
 				name: "Travis Automated Build",
+				body: "Built",
 				owner: "IceHacks",
 				repo: "pls-bot",
-				assets: ["plsbot-built.dmg"],
+				assets: ["dist/plsbot-built.dmg"],
 				auth: token
 			},
 			(err, result) => {
