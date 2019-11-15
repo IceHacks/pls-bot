@@ -19,22 +19,4 @@ builder
 			artifactName: "plsbot-built.${ext}"
 		}
 	})
-	.then(() => {
-		gh(
-			{
-				tag_name: "v1.0.0",
-				target_commitish: "master",
-				name: "Travis Automated Build",
-				body: "Built",
-				owner: "IceHacks",
-				repo: "pls-bot",
-				assets: ["dist/plsbot-built.dmg"],
-				auth: token
-			},
-			(err, result) => {
-				if (err) throw err;
-
-				console.log(result);
-			}
-		);
-	});
+	.then(() => {});

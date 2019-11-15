@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"electron": "^7.1.1",
 		"electron-builder": "^22.1.0",
-		"gh-release": "^3.5.0"
+		"release-it": "^12.4.3"
 	},
 	"repository": {
 		"type": "git",
@@ -24,5 +24,16 @@
 		"discord.js": "^11.5.1",
 		"jquery": "^3.4.1",
 		"lodash": "^4.17.15"
+	},
+	"release-it": {
+		"github": {
+			"release": true,
+			"tokenRef": "GH_TOKEN",
+			"releaseName": "Travis Build",
+			"releaseNotes": "a build from Travis CI",
+			"assets": [
+				"dist/plsbot-built.*"
+			]
+		}
 	}
 }

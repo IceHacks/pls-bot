@@ -25,7 +25,7 @@ script:
             electronuserland/builder:wine \
             /bin/bash -c "npm --link-duplicates --pure-lockfile && npm run dist --linux --win"
         else
-          node build
+          node build ; release-it 1.0.0 --ci
         fi
 
 before_cache:
