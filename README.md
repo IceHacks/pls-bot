@@ -3,4 +3,6 @@
 
 I'm not going to tell you how to get the token as I wish you not to use this. If you use and find your token just know this doesn't record or store your token on any server.
 
+Installation instructions come after I find out how to build for multiple OSes lol
+
 IceHacks.
