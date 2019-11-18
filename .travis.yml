@@ -8,9 +8,9 @@ matrix:
               - ELECTRON_CACHE=$HOME/.cache/electron
               - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 
-        - os: linux
-          language: node_js
-		  node_js: "10"
+    - os: linux
+      services: docker
+      language: generic
 
 cache:
     directories:
