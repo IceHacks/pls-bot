@@ -35,6 +35,9 @@
 				"dist/plsbot-built.*"
 			]
 		},
+		"git": {
+			"requireUpstream": false
+		},
 		"npm": {
 			"publish": false
 		}
