@@ -21,3 +21,15 @@ IceHacks.
 
 ## Screenshots
 <img src="https://i.ibb.co/vVHCwqM/unknown.png" />
+
+## Building
+This part is for Developers or people on unsupported systems. It will show you how to make a binary for yourself. You will need NodeJS and Git.
+
+- Clone the repo
+  - `git clone https://github.com/IceHacks/pls-bot.git`
+- Install
+  - `npm i`
+- Build
+  - `node build`
+  
+Now you have a binary built into `./pls-bot/dist`. It's name should be `plsbot-built.{exe|dmg|zip|...}`
