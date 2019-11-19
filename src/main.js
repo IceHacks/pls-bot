@@ -2,7 +2,7 @@ const electron = require("electron");
 const { app, BrowserWindow, Menu } = electron;
 const path = require("path");
 
-//Menu.setApplicationMenu(null);
+if (process.platform !== "darwin") Menu.setApplicationMenu(null);
 
 let win;
 
@@ -14,7 +14,6 @@ function createWindow() {
 			nodeIntegration: true
 		},
 		useContentSize: true
-		//autoHideMenuBar: true
 	});
 
 	win.loadFile("src/index.html");
