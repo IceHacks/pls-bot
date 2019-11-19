@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: [macos, windows, ubuntu-18.04]
+    runs-on: macos
 
     strategy:
       matrix:
