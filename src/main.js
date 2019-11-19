@@ -1,5 +1,6 @@
 const electron = require("electron");
 const { app, BrowserWindow, Menu } = electron;
+const path = require("path");
 
 Menu.setApplicationMenu(null);
 
@@ -8,7 +9,7 @@ let win;
 function createWindow() {
 	win = new BrowserWindow({
 		width: 303,
-		height: 323,
+		height: 418,
 		webPreferences: {
 			nodeIntegration: true
 		},
@@ -16,6 +17,7 @@ function createWindow() {
 	});
 
 	win.loadFile("src/index.html");
+	win.setIcon(path.resolve(__dirname, "favicon.png"));
 
 	//win.webContents.openDevTools();
 

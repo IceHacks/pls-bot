@@ -17,6 +17,7 @@ $("#start").on("click", () => {
 
 		$("#start").attr("disabled", true);
 		$("#stop").removeAttr("disabled");
+		$("#send").removeAttr("disabled");
 	} else {
 		if (!bot) console.log("Didn't make bot");
 	}
@@ -35,6 +36,16 @@ $("#stop").on("click", () => {
 
 		$("#stop").attr("disabled", true);
 		$("#start").removeAttr("disabled");
+	}
+});
+
+$("#send").on("click", () => {
+	var co = $("#co")
+		.val()
+		.trim();
+
+	if (co.length > 0 && bot) {
+		bot.channel.send(co);
 	}
 });
 
