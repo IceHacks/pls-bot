@@ -2,7 +2,7 @@ const electron = require("electron");
 const { app, BrowserWindow, Menu } = electron;
 const path = require("path");
 
-Menu.setApplicationMenu(null);
+//Menu.setApplicationMenu(null);
 
 let win;
 
@@ -13,7 +13,8 @@ function createWindow() {
 		webPreferences: {
 			nodeIntegration: true
 		},
-		useContentSize: true
+		useContentSize: true,
+		autoHideMenuBar: true
 	});
 
 	win.loadFile("src/index.html");
