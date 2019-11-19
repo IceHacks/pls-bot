@@ -13,8 +13,8 @@ function createWindow() {
 		webPreferences: {
 			nodeIntegration: true
 		},
-		useContentSize: true,
-		autoHideMenuBar: true
+		useContentSize: true
+		//autoHideMenuBar: true
 	});
 
 	win.loadFile("src/index.html");

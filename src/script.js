@@ -24,6 +24,7 @@ $("#start").on("click", () => {
 
 	if (bot && !bot.enabled) {
 		bot.start();
+		bot.setChannel(channel);
 
 		$("#start").attr("disabled", true);
 		$("#stop").removeAttr("disabled");
