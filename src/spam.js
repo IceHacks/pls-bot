@@ -97,7 +97,7 @@ module.exports = class {
 
 	setChannel(c) {
 		this.channelId = c;
-		this.channel = client.channels.get(this.channelId);
+		this.channel = this.client.channels.get(this.channelId);
 	}
 
 	start() {

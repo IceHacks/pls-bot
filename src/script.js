@@ -18,6 +18,8 @@ $("#start").on("click", () => {
 		$("#start").attr("disabled", true);
 		$("#stop").removeAttr("disabled");
 		$("#send").removeAttr("disabled");
+
+		$("#start").val("START");
 	} else {
 		if (!bot) console.log("Didn't make bot");
 	}
@@ -47,6 +49,12 @@ $("#send").on("click", () => {
 
 	if (co.length > 0 && bot) {
 		bot.channel.send(co);
+	}
+});
+
+$("#co").on("keyup", e => {
+	if (e.key == "Enter") {
+		$("#send").click();
 	}
 });
 

@@ -2,7 +2,7 @@ const electron = require("electron");
 const { app, BrowserWindow, Menu } = electron;
 const path = require("path");
 
-if (process.platform !== "darwin") Menu.setApplicationMenu(null);
+//if (process.platform !== "darwin") Menu.setApplicationMenu(null);
 
 let win;
 
