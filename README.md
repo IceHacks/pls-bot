@@ -1,8 +1,7 @@
 # PlsBot
-
 ### Warning! You will get banned for using this. I do not use this and I am not responsible for what happens to you.
 
-This is the recreation of a thing I made before the ban. This is really just for educational purposes and because my friends wanted a UI for it. It was a nice challenge to make a UI but I think it looks pretty good.
+This is the recreation of a spambot I made before the ban. I just updated it to work with **DankMemer** and gave it a UI. This is just for educational purposes and because my friends wanted a UI. I think I did a good job on the UI, although not very scalable lol.
 
 I'm will not tell you how to get your token.
 
@@ -34,7 +33,6 @@ This part is for Developers or people on unsupported systems. It will show you h
 -   Install
     -   `npm i`
 -   Build
-
     -   `node build`
 
 Now you have a binary built into `./pls-bot/dist`. It's name should be `plsbot-built.{exe|dmg|zip|...}`
