@@ -20,7 +20,8 @@ There are some features of this left out because I don't want to give them to yo
 IceHacks.
 
 ## Screenshots
-<img src="https://i.ibb.co/vVHCwqM/unknown.png" />
+
+<img src="https://i.ibb.co/k2SvTPz/unknown.png" />
 
 ## Building
 This part is for Developers or people on unsupported systems. It will show you how to make a binary for yourself. You will need NodeJS and Git.
