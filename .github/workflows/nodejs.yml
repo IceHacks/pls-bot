@@ -33,7 +33,7 @@ jobs:
         
   winBuild:
 
-    runs-on: windows
+    runs-on: windows-latest
 
     strategy:
       matrix:
