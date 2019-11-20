@@ -1,10 +1,6 @@
 const builder = require("electron-builder");
-const Platform = builder.Platform;
-const token = process.env.GH_TOKEN;
 const fs = require("fs-extra");
 const path = require("path");
-
-console.log(token);
 
 builder
 	.build({
