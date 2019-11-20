@@ -1,10 +1,15 @@
 const electron = require("electron");
-const { app, BrowserWindow, Menu } = electron;
+const { app, BrowserWindow, Menu, ipcMain } = electron;
 const path = require("path");
 
-if (process.platform !== "darwin") Menu.setApplicationMenu(null);
+if (process.platform !== "darwin" ? app.isPackaged : false)
+	Menu.setApplicationMenu(null);
 
 let win;
+
+ipcMain.on("resize", (event, arg) => {
+	if (win) win.setContentSize(arg.width, arg.height);
+});
 
 function createWindow() {
 	win = new BrowserWindow({
