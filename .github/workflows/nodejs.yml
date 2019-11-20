@@ -3,30 +3,55 @@ name: Node CI
 on: [push]
 
 jobs:
-  macBuild:
+    macBuild:
+        runs-on: macos
 
-    runs-on: macos
+        strategy:
+            matrix:
+                node-version: [12.x]
 
-    strategy:
-      matrix:
-        node-version: [12.x]
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: npm install, build
+              run: |
+                  npm ci
+                  node build
+              env:
+                  CI: true
+            - name: Upload artifact
+              uses: actions/upload-artifact@v1.0.0
+              with:
+                  # Artifact name
+                  name: buildMac
+                  # Directory containing files to upload
+                  path: ./dist/
+    winBuild:
+        runs-on: windows-latest
 
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build
-      run: |
-        npm ci
-        node build
-      env:
-        CI: true
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1.0.0
-      with:
-        # Artifact name
-        name: buildMac
-        # Directory containing files to upload
-        path: ./dist/plsbot-built.dmg
+        strategy:
+            matrix:
+                node-version: [12.x]
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: npm install, build
+              run: |
+                  npm ci
+                  node build
+              env:
+                  CI: true
+            - name: Upload artifact
+              uses: actions/upload-artifact@v1.0.0
+              with:
+                  # Artifact name
+                  name: buildWin
+                  # Directory containing files to upload
+                  path: ./dist/
