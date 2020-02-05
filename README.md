@@ -16,7 +16,7 @@ I will not tell you how to get your token.
     -   Enter the ID of the channel you wish to bot in
     -   Enter the amount of cash you want your bot to bet
 
-There are some features of this left out because I don't want to give them to you. But maybe I'll make more available later. If you use this (I suggest not) your should use an alt account that is not signed in. And use that account as your hidden personal bank.
+There are some features of this left out because I don't want to give them to you. But maybe I'll make more available later. If you use this (I suggest not) you should use an alt account that is not signed in. And use that account as your hidden personal bank.
 
 IceHacks.
 
