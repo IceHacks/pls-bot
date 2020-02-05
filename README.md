@@ -3,7 +3,7 @@
 
 This is the recreation of a spambot I made before the ban. I just updated it to work with **DankMemer** and gave it a UI. This is just for educational purposes and because my friends wanted a UI. I think I did a good job on the UI, although not very scalable lol.
 
-I'm will not tell you how to get your token.
+I will not tell you how to get your token.
 
 ## Installing
 
